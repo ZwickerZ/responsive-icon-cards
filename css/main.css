@@ -28,7 +28,7 @@ ul {
 .cards {
   padding: 0;
 }
-.cards li {
+.cards {
   list-style-type: none;
 }
 .card-img img {
@@ -42,7 +42,7 @@ ul {
   margin-bottom: 0;
 }
 
-.card p {
+.card-body p {
   margin-top: 0;
 }
 
