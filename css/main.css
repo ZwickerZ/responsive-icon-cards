@@ -28,9 +28,11 @@ ul {
 .cards {
   padding: 0;
 }
+
 .cards {
   list-style-type: none;
 }
+
 .card-img img {
   display: block;
   width: 50px;
@@ -101,9 +103,11 @@ ul {
     font-size: 120%;
     line-height: 1.5;
   }
+
   .card:nth-child(2) {
     margin: 0;
   }
+
 }
 
 @media only screen and (min-width: 90em) {
