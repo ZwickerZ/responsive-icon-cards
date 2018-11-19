@@ -18,9 +18,105 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
+ul {
+  margin: .75em;
+}
+
+.cards {
+  padding: 0;
+}
 .cards li {
   list-style-type: none;
 }
-.card img {
+.card-img {
+  display: block;
   width: 50px;
+  margin: 0 auto;
+}
+
+.card h2 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  .card-img {
+    display: inline-block;
+    margin: 0 .75em;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 75%;
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  ul {
+    margin: .75rem;
+  }
+
+  .card {
+    display: inline-block;
+    width: 32%;
+  }
+
+  .card:nth-child(2) {
+    margin: 0 .75em;
+  }
+
+  .card-body {
+    width: 100%;
+  }
+
+  .card-img {
+    display: block;
+    margin: 0 auto 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+  .card:nth-child(2) {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 90em) {
+   html {
+    font-size: 130%;
+  }
+
+  .card-img {
+    display: inline-block;
+    margin-right: .75em;
+  }
+
+  .card-body {
+    display: inline-block;
+    width: 80%;
+  }
 }
